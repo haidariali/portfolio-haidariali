@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Klanten&werkervaring</title>
+    <link rel="stylesheet" href="../CSS/csscv.css">
+    <link href="../CSS/klanten.css" rel="stylesheet">
+    <script src="../scripts/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="divBody">
+    <div id="div1Button">
+        <br>
+        <div class="icon1" >
+            <a href="../index.html">
+                <hr class="hr-line" />
+                <hr class="hr-line" />
+                <hr class="hr-line" />
+            </a>
+        </div>
+        <div class="profile-icon-div">
+            <a href="../index.html">
+                <img src="../Afbeeldingen/profile-icon.png" class="profile-icone"  alt="#">
+            </a>
+        </div>
+        <div class="contact-me-icon-div">
+            <a href="contact.html">
+                <img src="../Afbeeldingen/contact-icon.png" class="profile-icone" alt="#">
+            </a>
+        </div>
+        <div class="revieuw-me-icon-div">
+            <a href="klanten.html">
+                <img src="../Afbeeldingen/revieuw-icon.png" class="profile-icone" alt="#">
+            </a>
+        </div>
+        <div class="diploma-me-icon-div">
+            <a href="updates.html">
+                <img src="../Afbeeldingen/diploma-icon.png" class="profile-icone" alt="#">
+            </a>
+        </div>
+        <div class="cv-me-icon-div">
+            <a class="diplomaDonwloadLink" href="../uploaden/Haidari_Ali_cv.pdf" download>
+                <img src="../Afbeeldingen/cv-icon.png" class="cv-icone" alt="#">
+            </a>
+        </div>
+    </div>
+    <div id="div2Photo">
+        <img src="../Afbeeldingen/mijnBeeld/mijnFoto2.jpeg" class="profilePhoto" alt="#">
+        <div class="tekstNaam">
+            <span class="spanNaamTekst">Ali Haidari</span>
+            <ul class="ulSocialMedia">
+                <li><a href="https://www.linkedin.com/in/ali-haidari-2b7414296/"> <img src="../Afbeeldingen/profile-diensten/linkin-icon.png" class="socialMediaIcon" alt="#"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="../Afbeeldingen/profile-diensten/fecebook-icon.png" class="socialMediaIcon" alt="#"></a> </li>
+            </ul>
+            <span id="klassNaam">1PROb</span>
+        </div>
+    </div>
+    <div id="div3Explain">
+           <h2>My clients</h2>
+           <hr />
+           <div class="divKlanten">
+              <div class="klantenLogos">
+                  <img src="../Afbeeldingen/klanten/kingbarbershop.png" class="klanten-icone"  alt="#">
+              </div>
+               <div class="klantenLogos">
+                   <img src="../Afbeeldingen/klanten/HasseltHairstyle.png" class="klanten-icone"  alt="#">
+               </div>
+           </div>
+        <hr />
+        <div class="revieuw">
+            <h2>Write a Review</h2>
+            <form id="revieuwFormullier">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+                <button type="submit">Post Review</button>
+            </form>
+        </div>
+        <hr />
+        <div class="geposteRevieuw">
+            <h3>Posted Reviews:</h3>
+            <div id="revieuwLijsten"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

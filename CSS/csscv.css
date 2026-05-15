@@ -1,0 +1,657 @@
+/*ali haidari 1PROb* 2024 - 2025*/
+
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: rgba(155, 164, 159, 0.51);
+    margin: 0;
+    overflow: hidden; /* de scrollen onmogleijk maken op de pagina*/
+}
+/* de hele body html*/
+#divBody{
+    margin: 50px auto;
+    background-color: white;
+    min-width: 85%;
+    height: 96%;
+    display: flex;
+    align-items: stretch;
+}
+#div2Photo{
+    text-align: center;
+}
+#klassNaam{
+    text-align: center;
+}
+
+/* ---------------------------de linker div knoppen div -------------------------------*/
+#div1Button {
+    width: 5%;
+    height: 780px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #5c5cc7;
+    padding: 10px;
+}
+
+/* icone voor menu drie strepjes*/
+
+.icon1{
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #c41d1d;
+    margin: 10px auto;
+}
+
+.icon1 hr {
+    width: 100%;
+    height: 3px;
+    background-color: #c41d1d;
+    margin: 2px 0;
+    border: none;
+}
+/* bij mous hover de drie strepjes tot 4px groter maken*/
+.icon1 a:hover .hr-line{
+    height: 6px;
+}
+
+/* profiel icone persoon profiel*/
+.profile-icon-div{
+    margin: 100px auto 8px auto;
+}
+#div1Button a:hover img.profile-icone{
+    height: 55px;
+    width: 55px;
+}
+
+/* alle iconen in div 1 (links)*/
+.profile-icone{
+    width: 50px;
+    height: 50px;
+}
+/* cv div onderste icon*/
+.cv-me-icon-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 25%;
+}
+.portfolio-me-icon-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 55px;
+    height: 100%;
+}
+
+.portfolio-me-icon-div img{
+    width: 48px;
+    height: 48px;
+}
+
+
+.cv-icone{
+    /*position: absolute;*/
+    width: 55px;
+    height: 55px;
+}
+/*------------- vanaf hier zijn instellingen van het middenste div (mijn foto) --------------*/
+
+/* div midden (div 2) mijn foto*/
+#div2Photo{
+    position: relative;
+    width: 23%;
+    height: 786px;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* profile foto*/
+.profilePhoto{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, border 0.3s ease;
+}
+/* hover effect voor mijn foto*/
+.profilePhoto:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+.profilePhoto:active {
+    box-shadow: none;
+    transform: translateY(0);
+    border: 4px solid #f3e225;
+}
+
+.tekstNaam{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+.spanNaamTekst{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* social media iconen op de profile foto*/
+
+.ulSocialMedia{
+    list-style-type: none;
+    display: flex;
+    margin: auto 0 20px 60px;
+}
+.socialMediaIcon{
+    width: 50px;
+    height: 50px;
+}
+
+
+/* --------------------van hier zijn de instellingen van div drie rechtste -------------------*/
+#div3Explain{
+    background-color: white;
+    width: 70%;
+    height: 750px;
+    margin: 10px;
+    overflow: auto;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+#div3Explain::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* css voor de Mijn verhaal enkel*/
+.divOverme{
+    text-align: center;
+    /*background-color: green;*/
+}
+.hOverme{
+    margin: auto;
+    font-size: 50px;
+    font-family: Trattatello, fantasy;
+}
+#MijnVerhaal{
+    margin: 10px 20px 30px 20px;
+}
+.hr-line1{
+    width: 90%;
+}
+
+.mijnDiensten{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+
+}
+.divDienst{
+    /* ali haidari  beveilige code*/
+    background-color: #ece7e7;
+    width: 90%;
+    /*display: inline-block;*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.ulDienst{
+    list-style-type: none;
+}
+.ulDienst h3{
+    margin: 0 auto;
+}
+.profile-dienst-icone{
+    width: 60px;
+    height: 50px;
+}
+
+/* div my project instellingen */
+.divMyProjects{
+    background-color: #d9d9de;
+}
+table{
+    margin: auto;
+    border-collapse: separate;
+   /* box-shadow: 0 0 10px #000;*/
+}
+td, th {
+    text-align: center;
+    padding: 11px;
+}
+.linkNaarKingbarbershop{
+    text-decoration: none;
+    color: black;
+}
+.linkNaarKingbarbershop:hover{
+    font-size: 30px;
+    color: red;
+    text-decoration: none;
+}
+
+.language-chart {
+    display: flex;
+    justify-content: space-around;
+}
+
+.language {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #ccc;
+    position: relative;
+}
+
+#perzisch::before {
+    content: "Persion";
+}
+
+#nederlands::before {
+    content: "Netherlands";
+}
+
+#engels::before {
+    content: "English";
+}
+
+#frans::before {
+    content: "Franch";
+}
+
+#russisch::before {
+    content: "Russian";
+}
+
+.language::after {
+    content: attr(data-percentage) "%";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+
+}
+
+.language::before{
+    content: attr(data-language);
+    position: absolute;
+    top: -31px;
+    left: 10px;
+}
+
+/* andere diploma secsie */
+
+.div2AndereDiploma{
+    display: flex;
+}
+.UlAnderediploma{
+    list-style-type: none;
+}
+.profile-andere-diploma-icone{
+    width: 80px;
+    height: 80px;
+}
+
+/* --------------------Resposievitiet----------------------------*/
+@media screen and (min-width: 1278px) {
+    #divBody {
+        max-width: 1150px;
+        max-height: 800px;
+    }
+}
+
+/* werk evaring  div ali haidari beveiling */
+
+.WerkErvaring {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.timeline {
+    position: relative;
+    width: calc(100% - 40px);
+    margin: 150px auto 100px auto;
+    height: 4px;
+    background-color: #c89b00;
+    border-radius: 2px;
+
+}
+
+.timeline-item {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.timeline-item:nth-child(1) { left: -10%; }
+.timeline-item:nth-child(2) { left: 14%; }
+.timeline-item:nth-child(3) { left: 37%; }
+.timeline-item:nth-child(4) { left: 65%; }
+.timeline-item:nth-child(5) { left: 90%; }
+
+.timeline-item::before {  /*  boltjes */
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    background-color: #c89b00;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.timeline-jaar {  /*   jaar tallen  */
+    position: absolute;
+    top: -30px;
+    left: 45%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    font-weight: bold;
+    color: #c89b00;
+}
+
+
+.timeline-content {
+    position: relative;
+    width: 120px;
+    height: 130px;
+    margin: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+
+/*   stage link instellingen  */
+
+.stageLink {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.stageLink:hover {
+    color: green;
+    transform: translateY(-5px);
+}
+
+/*  footer instellingen   */
+
+#naarBovenIcone{
+    width: 50px;
+    height: 30px;
+}
+
+.footerdiv{
+    margin: 10px auto 0 auto;
+    padding: 0;
+    text-align: center;
+    border: none;
+
+}
+.knopNaarBoven{
+    border: none;
+    background-color: white;
+}
+
+/* mijn foto instellingen*/
+
+#mijnFoto{
+    image-rendering: smooth;
+    /*filter: brightness(1.2) contrast(1.1);*/
+}
+
+/*     cv download link */
+
+.diplomaDonwloadLink{
+    text-decoration: none;
+}
+
+@media screen and (min-width: 481px) {
+    .SocialMedia-Linken {
+        display: none;
+    }
+    #xLinkZijKant{
+        display: none;
+    }
+}
+
+/*  resposiviteit kleiner dan 480px scherm ******ali haidari ********   */
+
+
+@media screen and (max-width: 480px) {
+    #divBody{
+        margin: 0;
+    }
+    h1{
+        width: 93%;
+    }
+    #div2Photo {
+        display: none;
+    }
+    #div3Explain {
+        width: 93%;
+        height: 97%;
+        padding: 0;
+        margin: 0 5px 0 5px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .divDienst h3 {
+        font-size: 16px;
+    }
+
+    .divDienst p {
+        font-size: 12px;
+    }
+
+    #div1Button{
+        width: 6%;
+        height: 97%;
+       /* box-shadow: 0 0 2px rgb(59, 227, 29);
+        border-radius: 1px;*/
+    }
+    .icon1{
+        width: 90%;
+        margin: 1px auto 60px auto;
+
+    }
+    .profile-icone{
+        width: 40px !important;
+        height: 40px !important;
+        margin: 0 0 0 0;
+        object-fit: cover;
+    }
+    .profile-icon-div{
+        width: 40px;
+        margin: 10px 0 0 0;
+    }
+    .contact-me-icon-div{
+        width: 40px;
+        margin: 10px 0 0 0;
+    }
+    .revieuw-me-icon-div{
+        width: 40px;
+        margin: 10px 0 0 0;
+    }
+    .diploma-me-icon-div{
+        width: 40px;
+        margin: 10px 0 0 0;
+    }
+
+    .SocialMedia-Linken{  /*social media is in de zij kant zichtbaar tijdens de kleinere schermen dan 480   */
+        width: 40px;
+        margin: 10px 0 0 0;
+    }
+    #xLinkZijKant{  /*social media is in de zij kant zichtbaar tijdens de kleinere schermen dan 480   */
+        width: 40px;
+        margin: 180px 0 0 0;
+    }
+
+    #MijnVerhaal{
+        width: 93%;
+        height: auto;
+        font-size: 20px;
+        line-height: 1.5;
+        margin: auto;
+
+    }
+    .mijnDiensten{
+        height: auto;
+        width: 93%;
+        margin: auto;
+    }
+    .divMyProjects{
+        width: 96%;
+        height: auto;
+    }
+    th, td{
+        font-size: 20px;
+
+    }
+    th:hover, td:hover {
+        font-size: 30px;
+        color: #ff6347;
+        transition: all 0.3s ease;
+    }
+
+    /*  werkervaing boxen vertical lijen bij deze scherm grote */
+
+    .WerkErvaring {
+        width: 93%;
+        height: 220px;
+        margin: 50px 0 15px 0;
+        display: block;
+    }
+
+    .timeline-item {
+        width: 25%;
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .timeline-item:nth-child(1) {
+        left: -3.5%;
+    }
+    .timeline-item:nth-child(2) {
+        left: 8%;
+    }
+    .timeline-item:nth-child(3) {
+        left: 18.5%;
+    }
+    .timeline-item:nth-child(4) {
+        left: -3.5%;
+    }
+    .timeline-item:nth-child(5) {
+        left: 8%;
+    }
+
+    .timeline-item::before {
+        content: "|";
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 10px;
+        height: 15px;
+        background-color: #c89b00;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    .timeline-jaar {
+        width: 70px;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        font-weight: bold;
+        color: #c89b00;
+    }
+
+    .timeline-content {
+        width: 100%;
+        height: 130px;
+        margin: 5px 5px 20px 5px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 3px;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .UlAnderediploma{
+        padding: 5px 0 2px 0;
+    }
+
+    /*  de css insellingen van tallen kenis bij deze scherm */
+
+    .language-chart {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .language {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 4px solid #ccc;
+        position: relative;
+    }
+
+    .language::before {
+        content: attr(data-name);
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 10px;
+    }
+
+    .language::after {
+        content: attr(data-percentage) "%";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 12px;
+    }
+
+}
+

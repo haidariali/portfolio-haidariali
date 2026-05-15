@@ -1,0 +1,56 @@
+.divKlanten{
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.klantenLogos{
+    margin-left: 20px;
+}
+.klanten-icone{
+    width: 70px;
+    height: 70px;
+}
+
+.revieuw {
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#revieuwFormullier input, #revieuwFormullier select, #revieuwFormullier textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #c89b00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a67a00;
+}
+
+
+.geposteRevieuw {
+    margin-top: 20px;
+}
+
+.review-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.review-item .stars {
+    color: #c89b00;
+}

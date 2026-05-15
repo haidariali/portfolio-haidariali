@@ -1,0 +1,240 @@
+/*portfolio deel  ali haidari */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0 0 0 200px;
+}
+nav {
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+}
+.sidebar {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.sidebar a:hover {
+    text-decoration: underline;
+}
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f9;
+    font-weight: bold;
+}
+
+/*  midden deel */
+h2{
+    color: #6565a8;
+}
+#cv{
+    position: relative;
+}
+#minCV{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+}
+h4{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* opdrachten deel sectie*/
+
+#opdrachten h3 {
+    margin-left: 10px;
+}
+#opdrachten h5 {
+    margin-left: 30px;
+}
+#opdrachten p {
+    margin-left: 40px;
+}
+
+/* refelctie deel */
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box p {
+    text-align: center;
+    color: #333;
+}
+
+
+/* voor kliener schermen */
+
+
+@media screen and (max-width: 500px) {
+
+    body {
+        width: 100%;
+        padding-top: 60px;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #222;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    header h1 {
+        display: none;
+        /*font-size: 20px;
+        margin: 0;*/
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 5px 10px;
+        white-space: nowrap;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+
+    .main-content {
+        margin-left: 1px;
+        padding: 1px;
+    }
+
+    table{
+        width: 95%;
+
+    }
+    table, thead, tr, th, td{
+        font-size: 12px;
+    }
+
+    #minCV{
+        width: 97%;
+        margin: 0;
+    }
+    #beeldIxfactoren{
+        width: 99%;
+    }
+    header h1{
+        margin: 0;
+    }
+    .sidebar{
+        display: none;
+    }
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 60vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .box{
+        width: 125px;
+    }
+    .box p{
+        font-size: 15px;
+    }
+
+
+}
+
+
+
+
+
