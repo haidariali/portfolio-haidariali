@@ -1,10 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Portfolio WPL2 - ClockWise</title>
+    <link rel="stylesheet" href="WPL2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<nav class="wpl2-sidebar">
+    <div class="sidebar-title">WPL2</div>
+
+    <a href="#case">Case</a>
+    <a href="#aandeel">Mijn aandeel</a>
+    <a href="#sprint1">Sprint 1</a>
+    <a href="#sprint2">Sprint 2</a>
+    <a href="#sprint3">Sprint 3</a>
+
+    <div class="sidebar-bottom">
+        <a href="../../../index.html">Website</a>
+    </div>
+</nav>
+<div class="portfolio-container">
+    <h1 class="page-title">WPL2 Portfolio</h1>
+    <p class="subtitle">ClockWise project</p>
+
+    <div class="section" id="case">
+        <h2>Beschrijving van de case</h2>
+        <p>
+            ClockWise is een digitaal platform dat bedrijven helpt om tijdsregistratie op een eenvoudige en overzichtelijke manier te organiseren. Vanaf 1 januari 2027 wordt tijdsregistratie verplicht in België. Bedrijven moeten dan kunnen aantonen wanneer werknemers beginnen met werken, wanneer ze stoppen en wanneer ze pauze nemen. Deze gegevens moeten ook meerdere jaren bewaard blijven. Voor veel KMO’s kan dit extra administratie, kosten en onzekerheid veroorzaken. Daarom is ClockWise bedacht als een gebruiksvriendelijke oplossing die bedrijven ondersteunt zonder het proces ingewikkeld te maken.
+        </p>
+        <p>
+            Het systeem is bedoeld voor werknemers, admins en bedrijfsleiders. Werknemers kunnen makkelijk in- en uitklokken via hun smartphone, computer of een tablet op de werkvloer. Zo hoeft tijdsregistratie niet aan te voelen als een zware of ouderwetse prikklok. Voor admins en bedrijven is het belangrijk dat zij een duidelijk overzicht krijgen van werknemers, projecten, taken en geregistreerde werkuren. Op die manier kunnen ze beter opvolgen wie wanneer gewerkt heeft en aan welke taken of projecten tijd werd besteed.
+        </p>
+        <p>
+            Binnen het project werd het team verdeeld in twee grote delen: DVO en PRO. Het DVO-gedeelte richtte zich vooral op de publieke kant van ClockWise. Daarbij horen onder andere de website, branding, campagne, doelgroepanalyse, wireframes en het prototype. Dit deel moest ervoor zorgen dat ClockWise professioneel en duidelijk wordt voorgesteld aan mogelijke klanten.
+        </p>
+        <p>
+            Het PRO-gedeelte focuste meer op de technische en administratieve kant van het platform. Daarin kwamen functies zoals login, registratie, rollenbeheer, gebruikersbeheer, bedrijven, abonnementen, bestellingen, filters, sorteringen en dashboards aan bod. Ook de koppeling met de database en API was hierbij belangrijk. Binnen ClockWise bestaan verschillende rollen, zoals superadmin, admin en werknemer. Elke rol heeft eigen rechten, zodat gebruikers enkel toegang krijgen tot de functies die voor hen bedoeld zijn.
+        </p>
+        <p>
+            ClockWise is dus niet alleen een systeem om in en uit te klokken, maar een volledig platform waarmee bedrijven hun tijdsregistratie, gebruikers en administratie beter kunnen beheren. Het doel is vooral om de verplichte tijdsregistratie eenvoudiger, duidelijker en haalbaar te maken voor KMO’s.
+        </p>
+    </div>
+    <div class="section" id="aandeel">
+        <h2>Mijn aandeel binnen het project</h2>
+
+        <p>
+            Binnen WPL2 werkte ik vooral mee aan het PRO-gedeelte van ClockWise. Mijn taken lagen vooral bij de technische kant van het platform. Ik werkte aan login, registratie, gebruikersbeheer, abonnementen, API-koppelingen en de verbinding tussen frontend, backend en database.
+        </p>
+
+        <p>
+            In het begin werkte ik aan de eerste schermen van het platform, zoals de loginpagina, registratiepagina en de pagina voor wachtwoordherstel. Daarnaast hielp ik met bugs oplossen, merges uitvoeren op GitHub en het uitwerken van de eerste versie van de ERD. De ERD was een moeilijk onderdeel, omdat we goed moesten nadenken over welke gegevens we nodig hadden en hoe bedrijven, gebruikers, rollen en werknemers met elkaar verbonden moesten worden.
+        </p>
+
+        <p>
+            Later werkte ik verder aan de API voor login en registratie. Ik maakte ook functies waarmee een admin medewerkers of extra admins kan toevoegen. Daarnaast werkte ik aan de complete profile flow, zodat nieuwe gebruikers bij hun eerste login hun profielgegevens moeten aanvullen.
+        </p>
+
+        <p>
+            Een groot deel van mijn werk ging naar het abonnementensysteem. Ik werkte aan de abonnementenpagina, de aankoopflow, de betalingspagina en de rolgebaseerde weergave. Een admin kan abonnementen bekijken en kopen, terwijl een superadmin abonnementen kan beheren maar zelf geen abonnement kan kopen.
+        </p>
+
+        <p>
+            In de laatste sprint werkte ik verder aan bestellingen, abonnementsgeschiedenis, filters, statusbeheer en annuleringen. Ook maakte ik een delete endpoint voor abonnementen. Daarnaast heb ik veel frontend- en backendbugs opgelost, teamgenoten geholpen en regelmatig feedback gevraagd aan de lectoren.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Mijn werk per sprint</h2>
+
+        <div class="sprint-detail-card" id="sprint1">
+            <h3>Sprint 1</h3>
+
+            <div class="task-row">
+                <h4>Loginpagina ontwerpen</h4>
+                <span>➜</span>
+                <p>Voor de start van het platform maakte ik het eerste ontwerp van de loginpagina, zodat gebruikers zich op een duidelijke manier konden aanmelden.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Registratiepagina ontwerpen</h4>
+                <span>➜</span>
+                <p>De registratiepagina werd voorbereid zodat nieuwe gebruikers en bedrijven later via een duidelijke flow konden starten met ClockWise.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Wachtwoordherstelpagina maken</h4>
+                <span>➜</span>
+                <p>Voor wachtwoordherstel maakte ik de frontend van de pagina waar gebruikers hun wachtwoord opnieuw kunnen instellen via een code per e-mail.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Merges uitvoeren op GitHub</h4>
+                <span>➜</span>
+                <p>Doorheen de sprint heb ik regelmatig code samengevoegd op GitHub en geholpen bij conflicten of foutmeldingen na het mergen.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Bugs oplossen in de code</h4>
+                <span>➜</span>
+                <p>Verschillende fouten in de frontend en projectcode werden nagekeken en aangepast, zodat onderdelen opnieuw correct werkten.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Meewerken aan de eerste ERD-versie</h4>
+                <span>➜</span>
+                <p>Bij de eerste ERD-versie dacht ik mee over de structuur van bedrijven, gebruikers, rollen en welke gegevens we in de database moesten bewaren.</p>
+            </div>
+        </div>
+
+        <div class="sprint-detail-card" id="sprint2">
+            <h3>Sprint 2</h3>
+
+            <div class="task-row">
+                <h4>API maken voor login en registratie</h4>
+                <span>➜</span>
+                <p>In de backend werkte ik aan de API voor aanmelden en registreren, waaronder ook de registratie van de eerste admin van een bedrijf.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Registratie van eerste admin uitwerken</h4>
+                <span>➜</span>
+                <p>Deze flow zorgt ervoor dat een bedrijf via een eerste admin kan starten en daarna verder gebruikers kan beheren binnen het platform.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Admin medewerkers laten toevoegen</h4>
+                <span>➜</span>
+                <p>Voor admins maakte ik functionaliteit om nieuwe medewerkers of extra admins toe te voegen binnen hun eigen bedrijf.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Complete profile flow maken</h4>
+                <span>➜</span>
+                <p>Nieuwe gebruikers worden na hun eerste login doorgestuurd om hun profielgegevens aan te vullen voordat ze verder werken in het systeem.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Abonnementenpagina maken</h4>
+                <span>➜</span>
+                <p>De abonnementenpagina werd uitgewerkt zodat admins pakketten kunnen bekijken en superadmins abonnementen kunnen beheren.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Aankoopflow en payment page uitwerken</h4>
+                <span>➜</span>
+                <p>Na het kiezen van een abonnement wordt de admin doorgestuurd naar de betalingspagina, waarbij het gekozen abonnement wordt meegegeven.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Rolcontrole voor admin en superadmin toevoegen</h4>
+                <span>➜</span>
+                <p>De weergave werd aangepast per rol: admins kunnen abonnementen kopen, terwijl superadmins abonnementen beheren maar zelf niets aankopen.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>NUnit-test maken</h4>
+                <span>➜</span>
+                <p>Voor mijn individuele opdracht werkte ik NUnit-tests uit om bepaalde onderdelen van mijn code te controleren.</p>
+            </div>
+        </div>
+
+        <div class="sprint-detail-card" id="sprint3">
+            <h3>Sprint 3</h3>
+
+            <div class="task-row">
+                <h4>Delete endpoint voor abonnementen maken</h4>
+                <span>➜</span>
+                <p>In de backend kwam er een endpoint bij waarmee abonnementen via een knop verwijderd kunnen worden.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Bestellingen aanpassen naar abonnementenlogica</h4>
+                <span>➜</span>
+                <p>De user stories rond bestellingen werden vertaald naar onze projectcontext, waarbij een bestelling overeenkomt met een abonnementsaankoop.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Bestelgeschiedenis uitwerken</h4>
+                <span>➜</span>
+                <p>Er werd een overzicht gemaakt waarin admins en superadmins eerdere abonnementen en aankopen kunnen raadplegen.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Filteren en sorteren op status toevoegen</h4>
+                <span>➜</span>
+                <p>Om gegevens sneller terug te vinden, voegde ik filters en sortering toe op basis van status.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Annuleren van bestellingen uitwerken</h4>
+                <span>➜</span>
+                <p>De annuleerlogica werd toegevoegd zodat een actief abonnement of bestelling stopgezet kan worden wanneer dat nodig is.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Frontend- en backendbugs oplossen</h4>
+                <span>➜</span>
+                <p>Tijdens deze sprint loste ik meerdere fouten op in de frontend en backend, vooral rond API-koppelingen, rolcontrole en abonnementen.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>Portfolio koppelen aan WPL1 en online zetten</h4>
+                <span>➜</span>
+                <p>Mijn WPL2-portfolio werd toegevoegd aan mijn bestaande WPL1-portfolio en daarna online geplaatst via GitHub Pages.</p>
+            </div>
+
+            <div class="task-row">
+                <h4>MAUI-app maken als individuele opdracht</h4>
+                <span>➜</span>
+                <p>Voor de individuele opdracht maakte ik een .NET MAUI-app waarin studentengegevens opgehaald en opgeslagen worden via de PXL-database.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Belangrijkste technologieën</h2>
+
+        <div class="tech-list">
+            <span>Vue</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>C#</span>
+            <span>ASP.NET API</span>
+            <span>Dapper</span>
+            <span>SQL Server</span>
+            <span>GitHub</span>
+            <span>NUnit</span>
+            <span>.NET MAUI</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Onderdelen van ClockWise</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Werknemers</h3>
+                <p>Werknemers kunnen hun werktijd registreren en gekoppeld worden aan taken of projecten.</p>
+            </div>
+            <div class="info-card">
+                <h3>Bedrijven</h3>
+                <p>Bedrijven krijgen meer overzicht over gebruikers, projecten, taken en geregistreerde uren.</p>
+            </div>
+            <div class="info-card">
+                <h3>Beheer</h3>
+                <p>Admins en superadmins beheren gebruikers, rollen, abonnementen en administratieve gegevens.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

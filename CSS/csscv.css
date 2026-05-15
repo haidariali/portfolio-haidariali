@@ -72,25 +72,32 @@ html, body{
     height: 50px;
 }
 /* cv div onderste icon*/
-.cv-me-icon-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    height: 25%;
-}
-.portfolio-me-icon-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    width: 55px;
-    height: 100%;
-}
-
-.portfolio-me-icon-div img{
+.portfolio-me-icon-div img {
     width: 48px;
     height: 48px;
+}
+
+.cv-me-icon-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 10px;
+}
+.portfolio-icons-group {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+
+.portfolio-me-icon-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: auto;
 }
 
 
