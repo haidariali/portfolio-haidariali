@@ -210,6 +210,34 @@ body {
     background-color: white;
     color: #22223b;
 }
+.sidebar-bottom {
+    margin-top: auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-bottom a {
+    display: block;
+    text-align: center;
+    background-color: #c89b00;
+    color: white;
+}
+
+.sidebar-bottom a:hover {
+    background-color: white;
+    color: #22223b;
+}
+
+.pdf-download-link {
+    background-color: #2f9e44 !important;
+}
+
+.pdf-download-link:hover {
+    background-color: white !important;
+    color: #2f9e44 !important;
+}
 
 @media screen and (max-width: 700px) {
     body {
